@@ -5,8 +5,12 @@
 
 .navbar {
   display: flex;
-  gap: 10px;
+  gap: 200px;
   width: 100vw;
-  height: auto;
+  height: 50px;
   background-color: black;
+  color: white;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
 }

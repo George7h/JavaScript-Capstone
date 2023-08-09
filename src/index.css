@@ -14,3 +14,21 @@
   align-items: center;
   justify-content: center;
 }
+
+#logoName {
+  display: flex;
+  align-items: center;
+}
+
+#mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shows {
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin: 10px;
+}

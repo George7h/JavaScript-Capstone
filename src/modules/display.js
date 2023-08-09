@@ -1,3 +1,7 @@
+// import commentsCounter from './commentsCounter.js';
+// import displayComments from './displayComments.js';
+// import postComments from './postComments.js';
+
 export default function displayMetaData(displayData) {
   const showSection = document.getElementById('mainContainer');
 
@@ -12,6 +16,18 @@ export default function displayMetaData(displayData) {
     const commentsButton = document.createElement('button');
     commentsButton.className = 'comments';
     commentsButton.innerHTML = 'Comments';
+
+    // Add event listener to commentsButton
+    const popupModal = document.querySelector('.popupContainter');
+    commentsButton.addEventListener('click', () => {
+      popupModal.classList.add('active');
+    });
+
+    // Close popup
+    const xBtn = document.getElementById('closePop');
+    xBtn.addEventListener('click', () => {
+      popupModal.classList.remove('active');
+    });
 
     div.appendChild(imageElement);
     div.appendChild(UI);

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .navbar {
@@ -32,3 +33,61 @@
   border-radius: 10px;
   margin: 10px;
 }
+
+.popupContainter {
+  display: none;
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  background-color: antiquewhite;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  top: 1%;
+  right: 6%;
+  padding: 50px;
+}
+
+.popupContainter.active {
+  display: flex;
+}
+
+.popupContainter img {
+  padding: 50px;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  padding: 0;
+  right: 0%;
+  width: auto;
+  cursor: pointer;
+}
+
+.comment-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 80%;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 40%;
+}
+
+input {
+  padding: 15px;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+

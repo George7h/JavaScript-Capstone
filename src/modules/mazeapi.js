@@ -11,6 +11,7 @@ const fetchmetaData = async () => {
     summary: shows.summary,
     season: shows.season,
     airdate: shows.airdate,
+    average: shows.average,
   }));
 
   return showData;

@@ -7,8 +7,6 @@ export default function displayMetaData(displayData) {
 
     const imageElement = document.createElement('img');
     imageElement.src = card.image.medium;
-    
-
     const UI = document.createElement('div');
     UI.innerHTML = `${card.name}`;
     const commentsButton = document.createElement('button');

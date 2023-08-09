@@ -5,6 +5,6 @@ import displayMetaData from './modules/display.js';
 const init = async () => {
   const displayData = await fetchmetaData();
   displayMetaData(displayData);
-}
+};
 
-init ();
+init();

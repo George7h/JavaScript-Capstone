@@ -1,6 +1,7 @@
 import './index.css';
 import fetchmetaData from './modules/mazeapi.js';
 import displayMetaData from './modules/display.js';
+import popupTemplate from './modules/popup.js';
 
 const init = async () => {
   const displayData = await fetchmetaData();
@@ -8,3 +9,4 @@ const init = async () => {
 };
 
 init();
+popupTemplate();

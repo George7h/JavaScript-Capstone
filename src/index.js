@@ -4,9 +4,7 @@ import fetchLikeCount from './modules/fetchlikes.js';
 import './index.css';
 import itemCounter from './modules/itemcounter.js';
 
-
 const showContainer = document.getElementById('show-container');
-
 
 document.addEventListener('DOMContentLoaded', async () => {
   const shows = await fetchShows();

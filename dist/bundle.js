@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hitApi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hitApi.js */ \"./src/modules/hitApi.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\r\n\r\n\r\n\r\n\r\nconst showContainer = document.getElementById('show-container');\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', async () => {\r\n  const shows = await (0,_modules_hitApi_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  shows.forEach(async (show) => {\r\n    const card = document.createElement('div');\r\n    card.className = 'card';\r\n    card.innerHTML = `\r\n      <img src=\"${show.image.medium}\" alt=\"${show.name}\">\r\n      <p>${show.name}</p>\r\n      <button class=\"like-button\">Like</button>\r\n      <div class=\"like-count\">Likes: 0</div>\r\n    `;\r\n\r\n\r\n    showContainer.appendChild(card);\r\n  });\r\n});\r\n\n\n//# sourceURL=webpack://javascript-capstone/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hitApi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/hitApi.js */ \"./src/modules/hitApi.js\");\n/* harmony import */ var _modules_likeShow_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/likeShow.js */ \"./src/modules/likeShow.js\");\n/* harmony import */ var _modules_fetchlikes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/fetchlikes.js */ \"./src/modules/fetchlikes.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\r\n\r\n\r\n\r\n\r\n\r\nconst showContainer = document.getElementById('show-container');\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', async () => {\r\n  const shows = await (0,_modules_hitApi_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  shows.forEach(async (show) => {\r\n    const card = document.createElement('div');\r\n    card.className = 'card';\r\n    card.innerHTML = `\r\n      <img src=\"${show.image.medium}\" alt=\"${show.name}\">\r\n      <p>${show.name}</p>\r\n      <button class=\"like-button\">Like</button>\r\n      <div class=\"like-count\">Likes: 0</div>\r\n    `;\r\n\r\n    const likeButton = card.querySelector('.like-button');\r\n    const likeCount = card.querySelector('.like-count');\r\n\r\n    const initialLikeCount = await (0,_modules_fetchlikes_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(show.name);\r\n    likeCount.textContent = `Likes: ${initialLikeCount}`;\r\n\r\n    likeButton.addEventListener('click', async () => {\r\n      await (0,_modules_likeShow_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(show.name);\r\n      const updatedLikeCount = await (0,_modules_fetchlikes_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(show.name);\r\n      likeCount.textContent = `Likes: ${updatedLikeCount}`;\r\n    });\r\n\r\n    showContainer.appendChild(card);\r\n  });\r\n});\r\n\n\n//# sourceURL=webpack://javascript-capstone/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/fetchlikes.js":
+/*!***********************************!*\
+  !*** ./src/modules/fetchlikes.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst fetchLikeCount = async (itemName) => {\r\n  const API_TOKEN = 'aQgaudShERyXiWvddmpP';\r\n  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${API_TOKEN}/likes`;\r\n\r\n  try {\r\n    const response = await fetch(url);\r\n    const likesData = await response.json();\r\n    const itemLikes = likesData.find((item) => item.item_id === itemName);\r\n    return itemLikes ? itemLikes.likes : 0;\r\n  } catch (error) {\r\n    return 0;\r\n  }\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchLikeCount);\n\n//# sourceURL=webpack://javascript-capstone/./src/modules/fetchlikes.js?");
 
 /***/ }),
 
@@ -127,6 +137,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst fetchShows = async () => {\r\n  try {\r\n    const response = await fetch('https://api.tvmaze.com/shows');\r\n    return await response.json();\r\n  } catch (error) {\r\n    return error;\r\n  }\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchShows);\n\n//# sourceURL=webpack://javascript-capstone/./src/modules/hitApi.js?");
+
+/***/ }),
+
+/***/ "./src/modules/likeShow.js":
+/*!*********************************!*\
+  !*** ./src/modules/likeShow.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst likeShow = async (itemName) => {\r\n  const API_TOKEN = 'aQgaudShERyXiWvddmpP';\r\n  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${API_TOKEN}/likes`;\r\n\r\n  try {\r\n    const response = await fetch(url, {\r\n      method: 'POST',\r\n      headers: {\r\n        'Content-Type': 'application/json',\r\n      },\r\n      body: JSON.stringify({\r\n        item_id: itemName,\r\n      }),\r\n    });\r\n\r\n    if (response.status === 201) {\r\n      // Successfully liked the show\r\n    } else {\r\n      alert.error('Error liking show');\r\n    }\r\n  } catch (error) {\r\n    alert.error('Error:', error);\r\n  }\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (likeShow);\n\n//# sourceURL=webpack://javascript-capstone/./src/modules/likeShow.js?");
 
 /***/ })
 

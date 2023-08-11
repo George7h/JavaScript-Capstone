@@ -1,6 +1,8 @@
 import fetchShows from './modules/hitApi.js';
-
+import likeShow from './modules/likeShow.js';
+import fetchLikeCount from './modules/fetchlikes.js';
 import './index.css';
+import itemCounter from './modules/itemcounter.js';
 
 
 const showContainer = document.getElementById('show-container');
@@ -8,6 +10,7 @@ const showContainer = document.getElementById('show-container');
 
 document.addEventListener('DOMContentLoaded', async () => {
   const shows = await fetchShows();
+  itemCounter();
   shows.forEach(async (show) => {
     const card = document.createElement('div');
     card.className = 'card';
@@ -18,6 +21,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div class="like-count">Likes: 0</div>
     `;
 
+    const likeButton = card.querySelector('.like-button');
+    const likeCount = card.querySelector('.like-count');
+
+    const initialLikeCount = await fetchLikeCount(show.name);
+    likeCount.textContent = `Likes: ${initialLikeCount}`;
+
+    likeButton.addEventListener('click', async () => {
+      await likeShow(show.name);
+      const updatedLikeCount = await fetchLikeCount(show.name);
+      likeCount.textContent = `Likes: ${updatedLikeCount}`;
+    });
 
     showContainer.appendChild(card);
   });

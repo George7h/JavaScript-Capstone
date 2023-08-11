@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  color: white;
+}
+
 .navbar {
   display: flex;
   gap: 200px;
@@ -28,7 +32,19 @@
 
 .shows {
   padding: 10px;
-  background-color: lightgrey;
+  background-color: rgb(90, 88, 88);
   border-radius: 10px;
   margin: 10px;
+  width: min-content;
+  border: solid rgba(0, 0, 0, 0.2) 0.4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0.5rem 0.5rem 0.5rem;
+}
+
+.contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer;
 }

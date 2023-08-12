@@ -29,6 +29,8 @@ button {
 #logoName {
   display: flex;
   align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: coral;
 }
 
 #show-container {

@@ -9,6 +9,7 @@ body {
 button {
   box-shadow: rgba(0, 0, 0, 0.3) 0.2rem 0.1rem 0.3rem;
   margin: 5px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -106,4 +107,5 @@ footer {
 #closeBut {
   display: flex;
   justify-content: end;
+  cursor: pointer;
 }

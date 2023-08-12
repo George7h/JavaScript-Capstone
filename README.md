@@ -66,8 +66,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-- [Live Demo Link]<p>Coming soon</p>
+- Please click on this <a href="https://george7h.github.io/JavaScript-Capstone/">link</a> to view our live-project.
+- Click is a <a href="https://www.loom.com/share/c5cceed6207e4b58bda6274aac6164ba?sid=5c870a9d-fdd5-4b29-9623-0ce594645fbc">link</a> to our Video presentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

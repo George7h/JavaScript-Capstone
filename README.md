@@ -4,7 +4,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[JavascriptCapstone\] ](#-javascriptcapstone-)
+- [📖 \[MGSeries\] ](#-mgseries-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -13,6 +13,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -22,10 +23,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [JavascriptCapstone] <a name="about-project"></a>
+# 📖 [MGSeries] <a name="about-project"></a>
 
 
-**[JavascriptCapstone]** is a website that displays scores submitted by different players. It allows you to submit your score. All data is then preserved thanks to the external Leaderboard API service.
+**[MGSeries]** is a website that displays a list of series retrieved from an API. The UI is designed for a user to be able to like a series and also view extra details about it and add comments.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -34,7 +35,7 @@
 <details>
   <summary>HTML</summary>
   <ul>
-    <li><a href="./index.html">Home page</a></li>
+    <li><a href="./template.html">Home page</a></li>
   </ul>
 </details>
 
@@ -66,8 +67,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-- [Live Demo Link]<p>Coming soon</p>
+- Please click on this <a href="https://george7h.github.io/JavaScript-Capstone/">link</a> to view our live-project.
+- Click is a <a href="https://www.loom.com/share/c5cceed6207e4b58bda6274aac6164ba?sid=5c870a9d-fdd5-4b29-9623-0ce594645fbc">link</a> to our Video presentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,6 +99,10 @@ Run the following commands in the terminal:
 - npm run dev
 
 The browser will automatically open the website.
+
+### Run tests
+
+To run tests, run the following command: npm run test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +156,7 @@ If you like this project please give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my code reviewers for reviewing my code in this project. Also thank you for letting me use the Leaderboard API service in this project.
+I would like to thank my code reviewers for reviewing my code in this project. Also thank you for letting us use the Involvement API service and the TVMAZE API service in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

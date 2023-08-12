@@ -83,6 +83,10 @@ nav {
   width: 70%;
 }
 
+.popup-content h2 {
+  padding-left: 300px;
+}
+
 #close-popup {
   margin-top: 10px;
 }
@@ -101,6 +105,21 @@ nav {
   border: solid rgba(0, 0, 0, 0.3) 0.1px;
   box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.1rem 0.1rem;
 
+}
+
+#comment-form {
+  width: 100%;
+  height: auto;
+}
+
+#username {
+  width: 90%;
+  height: auto;
+}
+
+#comment {
+  width: 90%;
+  height: auto;
 }
 
 .card:hover {

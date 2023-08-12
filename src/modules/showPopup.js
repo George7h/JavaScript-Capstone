@@ -27,8 +27,11 @@ const showPopup = async (info) => {
     <div id="comments-container"></div>
     <div id="comment-count"></div>
     
+    
   `;
   popupContainer.style.display = 'flex';
+
+  await fetchAndDisplayComments(info.name);
 
   const commentForm = document.getElementById('comment-form');
 

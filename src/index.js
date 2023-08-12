@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       <img src="${show.image.medium}" alt="${show.name}">
       <p>${show.name}</p>
       <button class="like-button">Like</button>
-      <div class="like-count">Likes: 0</div>
+      <div class="like-count"> 0 likes</div>
     `;
 
     const likeButton = card.querySelector('.like-button');
     const likeCount = card.querySelector('.like-count');
 
     const initialLikeCount = await fetchLikeCount(show.name);
-    likeCount.textContent = `Likes: ${initialLikeCount}`;
+    likeCount.textContent = ` ${initialLikeCount} likes`;
 
     likeButton.addEventListener('click', async () => {
       await likeShow(show.name);

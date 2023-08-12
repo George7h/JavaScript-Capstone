@@ -14,10 +14,15 @@ button {
   cursor: pointer;
 }
 
+nav {
+  width: 100%;
+  height: auto;
+}
+
 .navbar {
   display: flex;
   gap: 200px;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   background-color: black;
   color: white;
@@ -34,10 +39,6 @@ button {
 }
 
 #subnav {
-  font-family: 'PT Sans', sans-serif;
-}
-
-.popup-content {
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -64,15 +65,22 @@ button {
   align-items: center;
 }
 
+.popup-container img {
+  width: 90%;
+  height: auto;
+  padding-left: 31px;
+}
+
 .popup-content {
+  font-family: 'PT Sans', sans-serif;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
   max-height: 80vh;
   overflow-y: auto;
   text-align: left;
+  width: 70%;
 }
 
 #close-popup {
@@ -80,6 +88,7 @@ button {
 }
 
 .card {
+  font-family: 'PT Sans', sans-serif;
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
@@ -91,6 +100,7 @@ button {
   background-color: rgb(230, 230, 230);
   border: solid rgba(0, 0, 0, 0.3) 0.1px;
   box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.1rem 0.1rem;
+
 }
 
 .card:hover {
@@ -107,6 +117,7 @@ button {
 }
 
 footer {
+  font-family: 'PT Sans', sans-serif;
   display: flex;
   justify-content: center;
   background-color: rgb(69, 68, 68);

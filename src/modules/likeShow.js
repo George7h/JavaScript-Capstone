@@ -1,5 +1,5 @@
 const likeShow = async (itemName) => {
-  const API_TOKEN = 'aQgaudShERyXiWvddmpP';
+  const API_TOKEN = 'JSCAPSTONE.env.REACT_APP_API_TOKEN';
   const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${API_TOKEN}/likes`;
 
   try {

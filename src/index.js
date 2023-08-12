@@ -15,9 +15,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     card.className = 'card';
     card.innerHTML = `
       <img src="${show.image.medium}" alt="${show.name}">
-      <p>${show.name}</p>
-      <button class="like-button">Like</button>
-      <div class="like-count"> 0 likes</div>
+      <div class="cardContain">
+      <div class="likeContain1">
+      ${show.name}
+        <div class="likeContain2">
+           <div class="like-button"><span class="like-button material-symbols-outlined " id="">favorite</span></div>
+          <div class="like-count"> 0 likes</div><div>
+        </div></div></div>
+        
+      <button class="comments-button">Comments</button>
     `;
 
     const likeButton = card.querySelector('.like-button');

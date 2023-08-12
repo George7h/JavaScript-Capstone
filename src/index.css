@@ -33,6 +33,14 @@ button {
   color: coral;
 }
 
+#subnav {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.popup-content {
+  font-family: 'PT Sans', sans-serif;
+}
+
 #show-container {
   display: flex;
   flex-wrap: wrap;

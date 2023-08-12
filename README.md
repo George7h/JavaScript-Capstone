@@ -156,7 +156,7 @@ If you like this project please give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my code reviewers for reviewing my code in this project. Also thank you for letting me use the Leaderboard API service in this project.
+I would like to thank my code reviewers for reviewing my code in this project. Also thank you for letting us use the Involvement API service and the TVMAZE API service in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

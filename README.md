@@ -4,7 +4,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[JavascriptCapstone\] ](#-javascriptcapstone-)
+- [📖 \[MGSeries\] ](#-mgseries-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -22,10 +22,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [JavascriptCapstone] <a name="about-project"></a>
+# 📖 [MGSeries] <a name="about-project"></a>
 
 
-**[JavascriptCapstone]** is a website that displays scores submitted by different players. It allows you to submit your score. All data is then preserved thanks to the external Leaderboard API service.
+**[MGSeries]** is a website that displays a list of series retrieved from an API. The UI is designed for a user to be able to like a series and also view extra details about it and add comments.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -34,7 +34,7 @@
 <details>
   <summary>HTML</summary>
   <ul>
-    <li><a href="./index.html">Home page</a></li>
+    <li><a href="./template.html">Home page</a></li>
   </ul>
 </details>
 

@@ -13,6 +13,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -98,6 +99,10 @@ Run the following commands in the terminal:
 - npm run dev
 
 The browser will automatically open the website.
+
+### Run tests
+
+To run tests, run the following command: npm run test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

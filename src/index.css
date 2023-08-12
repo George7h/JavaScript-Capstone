@@ -25,16 +25,6 @@
   justify-content: center;
 }
 
-.card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-}
-
 .card img {
   max-width: 100%;
   height: auto;
@@ -65,4 +55,46 @@
 
 #close-popup {
   margin-top: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.9s ease-in-out;
+  transition: all 1.6s ease;
+  background-color: rgb(230, 230, 230);
+  border: solid rgba(0, 0, 0, 0.3) 0.1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0.1rem 0.1rem 0.1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 1.6s ease;
+  border: solid rgba(0, 0, 0, 0.3) 0.4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0.6rem 0.6rem 0.6rem;
+  background-color: rgb(69, 68, 68);
+  color: white;
+}
+
+.like-button:hover {
+  color: lightcoral;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(69, 68, 68);
+  color: white;
+  height: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#closeBut {
+  display: flex;
+  justify-content: end;
 }

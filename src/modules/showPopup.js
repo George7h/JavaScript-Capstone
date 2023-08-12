@@ -27,8 +27,6 @@ const showPopup = async (info) => {
     <div id="comments-container"></div>
     <div id="comment-count"></div>
     
-    <button class="like-button">Like</button>
-    <div class="like-count">Likes: 0</div>
   `;
   popupContainer.style.display = 'flex';
 

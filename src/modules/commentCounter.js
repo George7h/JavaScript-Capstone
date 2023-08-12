@@ -1,5 +1,5 @@
 const fetchCommentCount = async (itemName) => {
-  const API_TOKEN = 'JSCAPSTONE.env.REACT_APP_API_TOKEN';
+  const API_TOKEN = 'aQgaudShERyXiWvddmpP';
   const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${API_TOKEN}/comments?item_id=${itemName}`;
 
   try {

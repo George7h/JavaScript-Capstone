@@ -10,12 +10,18 @@ const showPopup = async (info) => {
   <div>
   <span id="closeBut" class="material-symbols-outlined closeBut"> cancel </span>
   </div>
+  <div class="containpop">
     <img src="${info.image.medium}" alt="${info.name}">
     <h2>${info.name}</h2>
     <p>${info.summary}</p>
+
+  </div>
     <p>Language: ${info.language}</p>
     <p>Ratings: ${info.rating.average}</p>
-    
+    <h2 style="text-align:center;">Comments</h2>
+    <div id="comments-container"></div>
+    <div id="comment-count"></div>
+    <h2 style="text-align:center;">Add a comment</h2>
     <form id="comment-form">
       <label for="username">Your Name:</label>
       <input type="text" id="username" required><br>
@@ -24,8 +30,7 @@ const showPopup = async (info) => {
       <button type="submit">Submit Comment</button>
     </form>
     
-    <div id="comments-container"></div>
-    <div id="comment-count"></div>
+    
     
     
   `;

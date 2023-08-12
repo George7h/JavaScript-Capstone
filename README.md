@@ -13,6 +13,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -66,8 +67,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-- [Live Demo Link]<p>Coming soon</p>
+- Please click on this <a href="https://george7h.github.io/JavaScript-Capstone/">link</a> to view our live-project.
+- Click is a <a href="https://www.loom.com/share/c5cceed6207e4b58bda6274aac6164ba?sid=5c870a9d-fdd5-4b29-9623-0ce594645fbc">link</a> to our Video presentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,6 +99,10 @@ Run the following commands in the terminal:
 - npm run dev
 
 The browser will automatically open the website.
+
+### Run tests
+
+To run tests, run the following command: npm run test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +156,7 @@ If you like this project please give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my code reviewers for reviewing my code in this project. Also thank you for letting me use the Leaderboard API service in this project.
+I would like to thank my code reviewers for reviewing my code in this project. Also thank you for letting us use the Involvement API service and the TVMAZE API service in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

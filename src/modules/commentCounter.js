@@ -18,3 +18,4 @@ const updateCommentCount = async (itemName) => {
 };
 
 export default updateCommentCount;
+export { fetchCommentCount };

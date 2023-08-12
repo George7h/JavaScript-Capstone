@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     likeButton.addEventListener('click', async () => {
       await likeShow(show.name);
       const updatedLikeCount = await fetchLikeCount(show.name);
-      likeCount.textContent = `Likes: ${updatedLikeCount}`;
+      likeCount.textContent = ` ${updatedLikeCount} likes`;
     });
     card.addEventListener('click', (event) => {
       if (!event.target.classList.contains('like-button')) {
